@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    block-size:border-box ;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+body{
+    background-color:#fff;
+}
+a{
+    text-decoration: none;
+}
+.hero{
+    height:100vh ;
+    width: 100vw;
+}
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 30px 100px;
+}
+.logo{
+    font-size:30px;
+    font-weight:bold ;
+    color: blue;
+    cursor: pointer; 
+}
+.logo::first-letter{
+    font-size: 40px;
+    border: 4px solid blue;
+    border-right:transparent ;
+    padding-left:5px ;
+    color: #f64766;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px 20px;
+    
+}
+nav ul li a{
+    color:#1d1d24 ;
+    position: relative;
+    padding: 5px 0;
+    font-weight: bold;
+    
+    
+}
+nav ul li a:hover{
+    color: blue;
+}
+nav ul  li a::after{
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    position: absolute;
+    height: 3px;
+    background-color:black;
+    transition:.3s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.btn{
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    background:#0ef ;
+    padding:10px 30px;
+    border-radius: 50px;
+    display: inline-block;
+    font-weight: 500;
+    transition: all .4s ease-in-out;
+    border: 2px solid #f64766;
+}
+.btn:hover{
+    background:transparent ;
+    color:#0ef;
+}
+.detail{
+    position: absolute;
+    top: 35%;
+    left: 8%;
+}
+.detail h1{
+    color: #1f1f25;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 70px;
+}
+.detail h1 span{
+    color:#0ef;
+}
+.detail p{
+    color:#1f1f25;
+    font-size:18px;
+    margin-top:25px;
+    margin-bottom: 30px;
+}
+.image img{
+    display: block;
+    width:440px;
+    height: 506px;;
+}
+.image{
+    width: 20%;
+    height: 70%;
+    position: absolute;
+    bottom: 0;
+    right: 200px;
+}
+/*=====>about Me<=======*/
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+    padding: 25px 10px;
+    margin: 20px 0px;
+    background-color: #fff;
+    
+}
+.about-img img{
+    width: 40vw;
+}
+.heading{
+    text-align: center;
+    font-size: 60px;
+}
+.about-content h3{
+    font-size: 1.6rem;
+}
+.abbout-content p{
+    line-height:27px ;
+    margin: 2rem 0 2rem;
+}
+.about-content button{
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    background:#f64766 ;
+    padding:10px 30px;
+    border-radius: 50px;
+    display: inline-block;
+    font-weight: 500;
+    transition: all .4s ease-in-out;
+    border: 2px solid #f64766;
+}
+.about-content button:hover{
+    background:transparent ;
+    color: #f64766;
+}
+.about-content span{
+    color: #f64766;
+}
+
+
+/***skills***/
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+    padding: 25px 10px;
+    margin: 20px 0px;
+    background-color: #fff;
+    
+}
+.skills-img img{
+    width: 40vw;
+}
+.heading{
+    text-align: center;
+    font-size: 60px;
+}
+.skills-content h3{
+    font-size: 1.6rem;
+}
+.skills-content p{
+    line-height:27px ;
+    margin: 2rem 0 2rem;
+}
+.skills-content button{
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    background:#f64766 ;
+    padding:10px 30px;
+    border-radius: 50px;
+    display: inline-block;
+    font-weight: 500;
+    transition: all .4s ease-in-out;
+    border: 2px solid #f64766;
+}
+.skills-content button:hover{
+    background:transparent ;
+    color: #f64766;
+}
+.skills-content span{
+    color: #f64766;
+}
+
+/*contact */
+.contact-title
+{
+    color:var(--skin-color);
+    text-align: center;
+    font-size: 25px;
+    margin-bottom:20px;
+}
+.contact-sub-title
+{
+    color:var(--text-black-900);
+    text-align: center;
+    font-size: 15px; 
+    margin-bottom: 60px;  
+}
+
+/* Importing Google font - Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
+
+h1 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h1 span {
+    color: #BD53ED;
+    position: relative;
+}
+
+h1 span::before {
+    content: "";
+    height: 30px;
+    width: 2px;
+    position: absolute;
+    top: 50%;
+    right: -8px;
+    background: #BD53ED;
+    transform: translateY(-45%);
+    animation: blink 0.7s infinite;
+}
+
+h1 span.stop-blinking::before {
+    animation: none;
+}
+
+@keyframes blink {
+    50% { opacity: 0 }
+}
